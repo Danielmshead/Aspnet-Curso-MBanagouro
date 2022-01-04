@@ -1,0 +1,33 @@
+﻿@{ 
+    ViewBag.Title = "Contato"; 
+}
+
+<h2>Entre em contato</h2>
+<hr>
+<form id="form-contact" action="@Url.RouteUrl("Contact.Index")" role="form" method="post">
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="InputName">Nome</label>
+            <input type="text" class="form-control" id="InputName" name="Name" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="InputEmail">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" name="Email" placeholder="Digite seu email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputMessage">Message</label>
+        <textarea class="form-control" rows="5" id="inputMessage" name="Message" placeholder="Digite sua mensagem"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section CssPage {
+    <link href="~/content/libs/validate/jquery.validate.css" rel="stylesheet" />
+}
+
+@section ScriptPage {
+    <script src="~/content/libs/validate/jquery.validate.js"></script>
+    <script src="~/content/libs/validate/jquery.validate.extends.js"></script>
+    <script src="~/content/js/blog.contact.js"></script>
+}

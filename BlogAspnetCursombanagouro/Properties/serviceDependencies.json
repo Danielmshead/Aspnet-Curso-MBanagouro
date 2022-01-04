@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": "VaultUri"
+    },
+<<<<<<< HEAD
+    "secrets2": {
+      "type": "secrets"
+=======
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:blogaspnetcursombanagourodbserver.database.windows.net"
+>>>>>>> 610d88efc3041a9ffabfcf777642f38608d6e2af
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:blogAspnetCursombanagouro"
+<<<<<<< HEAD
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:blogaspnetcursombanagourodbserver.database.windows.net"
+=======
+>>>>>>> 610d88efc3041a9ffabfcf777642f38608d6e2af
+    }
+  }
+}
